@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
@@ -83,14 +82,35 @@ class _SignInPageState extends State<SignInPage> {
                   Padding(
                     padding: const EdgeInsets.only(left: 1.0),
                     child: InkWell(
-                        onTap: () {
-                          print('hello');
-                        },
-                        child: const Text(
-                          'Get help logging in.',
-                          style: TextStyle(fontSize: 14, color: Colors.blue),
-                        )),
-                  )
+                      onTap: () {
+                        print('hello');
+                      },
+                      child: const Text(
+                        'Get help logging in.',
+                        style: TextStyle(fontSize: 14, color: Colors.blue),
+                      ),
+                    ),
+                  ),
+
+                ],
+              ),
+            ),
+             Center(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 1.0),
+                    child: InkWell(
+                      onTap: () {
+                        print('sign up clicked');
+                      },
+                      child: const Text(
+                        'Sign Up.',
+                        style: TextStyle(fontSize: 14, color: Colors.blue),
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
             )
